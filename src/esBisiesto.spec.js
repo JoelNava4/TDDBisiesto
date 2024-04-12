@@ -28,5 +28,4 @@ describe("Determinar si un año es bisiesto", () => {
     it("El año 2000 debe ser bisiesto", () => {
         expect(determinarBisiesto(2000)).toEqual(true);
     });
-
 });
