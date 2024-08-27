@@ -21,4 +21,12 @@ describe("Determinar si un año es bisiesto", () => {
         expect(determinarBisiesto(10)).toEqual(false);
     });
     
+    it("El año 2100 no debe ser bisiesto", () => {
+        expect(determinarBisiesto(2100)).toEqual(false);
+    });
+
+    it("El año 2000 debe ser bisiesto", () => {
+        expect(determinarBisiesto(2000)).toEqual(true);
+    });
+
 });
