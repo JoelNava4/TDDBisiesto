@@ -16,5 +16,9 @@ describe("Determinar si un año es bisiesto", () => {
     it("Determinar si un año es bisiesto cuando es divisible entre 4 pero no entre 100", () => {
         expect(determinarBisiesto(120)).toEqual(true);
     });
+
+    it("Determinar que una año no es bisiesto cuando no es divisible entre 4 ", () => {
+        expect(determinarBisiesto(10)).toEqual(false);
+    });
     
 });
